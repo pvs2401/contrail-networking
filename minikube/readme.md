@@ -40,7 +40,7 @@ minikube version
   The first command will require your local password. The second `minikube version` command will usually flag a security warning on your Macbook. You may   see an OSX pop-up error because you downloaded this software outside the App store. To allow it, open the menu _“<Apple> / System Preferences /      Security & Privacy”_ and go to the General tab. 
   You should see a warning about   minikube, and a button to allow it. Click that and enter your password.  After this, re-run the `minikube version` command. Ensure it runs and presents the version.
 
-3. The installation of the CNI is driven by the deployer manifest “[deployer.yaml](https://github.com/Juniper/contrail-networking/blob/main/releases/22.1/minikube/deployer.yaml)” This is part of the manifest files in the [minikube folder](https://github.com/Juniper/contrail-networking/tree/main/releases/22.1/minikube) for the release.
+3. The installation of the CNI is driven by the deployer manifest “[deployer.yaml](https://github.com/Juniper/contrail-networking/blob/main/releases/22.4/minikube/deployer.yaml)” This is part of the manifest files in the [minikube folder](https://github.com/Juniper/contrail-networking/tree/main/releases/22.4/minikube) for the release.
   
 4. You must open the deployer.yaml file and replace the 4 instances of `<base64-encoded-credential>` with your dockerconfigjson authentication string to connect to enterprise-hub.juniper.net so that Kubernetes can download the container images for CN2. Your string will be base64 encoded, but decoded it will look like this:
 > 
